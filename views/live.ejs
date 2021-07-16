@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/syntax.css">
+<link id='style'rel="stylesheet" href="css/styles/atelier-forest-dark.css">
+<script>
+  k=()=>{
+      document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+    window.location.reload()
+  }
+  </script>
+<body onload="setInterval(k,5000)"></body>
+  <script src="js/main.js"></script>
+  <script src="js/sub.js">console.log(request.query)</script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="js/lib.js">hljs.initHighlightingOnLoad();</script>
+  <header>
+      <div id="heading">Innovation and Entrepreneurship Development Centre <br>Collage of Enginnering Karunagapally</div> 
+  </header> 
+  <div id='code' class='hljs' width='100%' contentEditable="true" >
+   <pre><code class="python"><%= data %></code></pre>   
+  </div>
+
+</body>
+   

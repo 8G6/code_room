@@ -1,0 +1,70 @@
+<html>
+     <head>
+        <link rel="stylesheet" href="css/main.css">
+     </head>
+     <body onload="hide('other-clg')">
+         <script type="text/javascript" src="js/main.js"></script>
+     <header>
+        <div id="heading">Innovation and Enterpurneer Devolpment Cell <br>Collage of Enginnering Karunagapally</div> 
+     </header>
+     <img src="img/back.png" id="back" alt="img">
+     <div id="form">
+         <h1>Introduction to Python</h1>
+         <table>
+             <tr>
+                 <td>Name</td>
+                 <td>:</td>
+                 <td><input type="text" placeholder="Your Full Name"> </td>
+             </tr>
+             <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="text" oninput='email(this)' placeholder="Your Full Email"></td>
+             </tr>
+            <tr>
+                <td>Batch</td>
+                <td>:</td>
+                <td><select name="Batch" class='tab' id="Batch" >
+                    <option value="-none-">-none-</option>
+                    <option value="Electronics and Communication">Electronics and Communication</option>
+                    <option value="Electronics and Eletrical">Electronics and Eletrical</option>
+                    <option value="Computor Science">Computer Science</option>
+                    <option value="Cvil">Cvil</option>
+                    <option value="Mech">Mechanical</option>
+                    <option value="Chemical">Chemical</option>
+                 </select></td>
+            </tr>
+            <tr>
+                <td>Sem</td>
+                <td>:</td>
+                <td> <select class='tab' name="Sem" id="Sem">
+                    <option value="-none-">-none-</option>
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                    <option value="S3">S3</option>
+                    <option value="S4">S4</option>
+                    <option value="S5">S5</option>
+                    <option value="S6">S6</option>
+                    <option value="S7">S7</option>
+                    <option value="S8">S8</option>
+                 </select></td>
+            </tr>
+            <tr>
+                <td>Collage</td>
+                <td>:</td>
+                <td><select onchange='other(this)' class='tab' name="Sem" id="Sem">
+                    <option value="CEK">Collage of Enginnering Karunagapally - CEK</option>
+                    <option value="other">Other</option>
+                 </select></td>
+            </tr>
+            <tr id='other-clg'>
+                <td>Name of Your Collage</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Your Collage Name"></td>
+            </tr>
+         </table>
+     </div>
+     <footor>
+     </footor>
+    </body>
+</html>

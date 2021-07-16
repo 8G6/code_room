@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link id='style'rel="stylesheet" href="css/styles/atelier-forest-dark.css">
+    <title>Document</title>
+</head>
+<body onload="javascript:document.body.style.overflow = 'visible';">
+    <script src="js/main.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/lib.js">hljs.initHighlightingOnLoad();</script>
+    <header>
+        <div id="heading">Innovation and Entrepreneurship Development Centre <br>Collage of Enginnering Karunagapally</div> 
+    </header>
+    <div id="form" >
+        <table>
+            <tr>
+                <td>Theme </td>
+                <td>:</td>
+                <td><select onchange="sss('css/styles/'+this.value);">
+                    <option value="a11y-dark.css">A11Y DARK</option>
+                    <option value="a11y-light.css">A11Y LIGHT</option>
+                    <option value="agate.css">AGATE</option>
+                    <option value="an-old-hope.css">AN OLD-HOPE</option>
+                    <option value="androidstudio.css">ANDROIDSTUDIO</option>
+                    <option value="arduino-light.css">ARDUINO LIGHT</option>
+                    <option value="arta.css">ARTA</option>
+                    <option value="ascetic.css">ASCETIC</option>
+                    <option value="atelier-cave-dark.css">ATELIER CAVE-DARK</option>
+                    <option value="atelier-cave-light.css">ATELIER CAVE-LIGHT</option>
+                    <option value="atelier-dune-dark.css">ATELIER DUNE-DARK</option>
+                    <option value="atelier-dune-light.css">ATELIER DUNE-LIGHT</option>
+                    <option value="atelier-estuary-dark.css">ATELIER ESTUARY-DARK</option>
+                    <option value="atelier-estuary-light.css">ATELIER ESTUARY-LIGHT</option>
+                    <option value="atelier-forest-dark.css">ATELIER FOREST-DARK</option>
+                    <option value="atelier-forest-light.css">ATELIER FOREST-LIGHT</option>
+                    <option value="atelier-heath-dark.css">ATELIER HEATH-DARK</option>
+                    <option value="atelier-heath-light.css">ATELIER HEATH-LIGHT</option>
+                    <option value="atelier-lakeside-dark.css">ATELIER LAKESIDE-DARK</option>
+                    <option value="atelier-lakeside-light.css">ATELIER LAKESIDE-LIGHT</option>
+                    <option value="atelier-plateau-dark.css">ATELIER PLATEAU-DARK</option>
+                    <option value="atelier-plateau-light.css">ATELIER PLATEAU-LIGHT</option>
+                    <option value="atelier-savanna-dark.css">ATELIER SAVANNA-DARK</option>
+                    <option value="atelier-savanna-light.css">ATELIER SAVANNA-LIGHT</option>
+                    <option value="atelier-seaside-dark.css">ATELIER SEASIDE-DARK</option>
+                    <option value="atelier-seaside-light.css">ATELIER SEASIDE-LIGHT</option>
+                    <option value="atelier-sulphurpool-dark.css">ATELIER SULPHURPOOL-DARK</option>
+                    <option value="atelier-sulphurpool-light.css">ATELIER SULPHURPOOL-LIGHT</option>
+                    <option value="atom-one-dark-reasonable.css">ATOM ONE-DARK-REASONABLE</option>
+                    <option value="atom-one-dark.css">ATOM ONE-DARK</option>
+                    <option value="atom-one-light.css">ATOM ONE-LIGHT</option>
+                    <option value="brown-paper.css">BROWN PAPER</option>
+                    <option value="brown-papersq.png">BROWN PAPERSQ.PNG</option>
+                    <option value="codepen-embed.css">CODEPEN EMBED</option>
+                    <option value="color-brewer.css">COLOR BREWER</option>
+                    <option value="darcula.css">DARCULA</option>
+                    <option value="dark.css">DARK</option>
+                    <option value="default.css">DEFAULT</option>
+                    <option value="docco.css">DOCCO</option>
+                    <option value="dracula.css">DRACULA</option>
+                    <option value="far.css">FAR</option>
+                    <option value="foundation.css">FOUNDATION</option>
+                    <option value="github-gist.css">GITHUB GIST</option>
+                    <option value="github.css">GITHUB</option>
+                    <option value="gml.css">GML</option>
+                    <option value="googlecode.css">GOOGLECODE</option>
+                    <option value="gradient-dark.css">GRADIENT DARK</option>
+                    <option value="gradient-light.css">GRADIENT LIGHT</option>
+                    <option value="grayscale.css">GRAYSCALE</option>
+                    <option value="gruvbox-dark.css">GRUVBOX DARK</option>
+                    <option value="gruvbox-light.css">GRUVBOX LIGHT</option>
+                    <option value="hopscotch.css">HOPSCOTCH</option>
+                    <option value="hybrid.css">HYBRID</option>
+                    <option value="idea.css">IDEA</option>
+                    <option value="ir-black.css">IR BLACK</option>
+                    <option value="isbl-editor-dark.css">ISBL EDITOR-DARK</option>
+                    <option value="isbl-editor-light.css">ISBL EDITOR-LIGHT</option>
+                    <option value="kimbie.dark.css">KIMBIE.DARK</option>
+                    <option value="kimbie.light.css">KIMBIE.LIGHT</option>
+                    <option value="lightfair.css">LIGHTFAIR</option>
+                    <option value="lioshi.css">LIOSHI</option>
+                    <option value="magula.css">MAGULA</option>
+                    <option value="mono-blue.css">MONO BLUE</option>
+                    <option value="monokai-sublime.css">MONOKAI SUBLIME</option>
+                    <option value="monokai.css">MONOKAI</option>
+                    <option value="night-owl.css">NIGHT OWL</option>
+                    <option value="nnfx-dark.css">NNFX DARK</option>
+                    <option value="nnfx.css">NNFX</option>
+                    <option value="nord.css">NORD</option>
+                    <option value="obsidian.css">OBSIDIAN</option>
+                    <option value="ocean.css">OCEAN</option>
+                    <option value="paraiso-dark.css">PARAISO DARK</option>
+                    <option value="paraiso-light.css">PARAISO LIGHT</option>
+                    <option value="pojoaque.css">POJOAQUE</option>
+                    <option value="pojoaque.jpg">POJOAQUE.JPG</option>
+                    <option value="purebasic.css">PUREBASIC</option>
+                    <option value="qtcreator_dark.css">QTCREATOR_DARK</option>
+                    <option value="qtcreator_light.css">QTCREATOR_LIGHT</option>
+                    <option value="railscasts.css">RAILSCASTS</option>
+                    <option value="rainbow.css">RAINBOW</option>
+                    <option value="routeros.css">ROUTEROS</option>
+                    <option value="school-book.css">SCHOOL BOOK</option>
+                    <option value="school-book.png">SCHOOL BOOK.PNG</option>
+                    <option value="shades-of-purple.css">SHADES OF-PURPLE</option>
+                    <option value="solarized-dark.css">SOLARIZED DARK</option>
+                    <option value="solarized-light.css">SOLARIZED LIGHT</option>
+                    <option value="srcery.css">SRCERY</option>
+                    <option value="stackoverflow-dark.css">STACKOVERFLOW DARK</option>
+                    <option value="stackoverflow-light.css">STACKOVERFLOW LIGHT</option>
+                    <option value="sunburst.css">SUNBURST</option>
+                    <option value="tomorrow-night-blue.css">TOMORROW NIGHT-BLUE</option>
+                    <option value="tomorrow-night-bright.css">TOMORROW NIGHT-BRIGHT</option>
+                    <option value="tomorrow-night-eighties.css">TOMORROW NIGHT-EIGHTIES</option>
+                    <option value="tomorrow-night.css">TOMORROW NIGHT</option>
+                    <option value="tomorrow.css">TOMORROW</option>
+                    <option value="vs.css">VS</option>
+                    <option value="vs2015.css">VS2015</option>
+                    <option value="xcode.css">XCODE</option>
+                    <option value="xt256.css">XT256</option>
+                    <option value="zenburn.css">ZENBURN</option>
+             </select></td>
+             <td><input type='text' id='name' placeholder='enter id'></td>
+            </tr>
+        </table>
+        <div class='hljs' id="number">
+            <span style="top:22px;position:relative;">1</span>
+        </div>
+        <div id='code' class='hljs'  contentEditable="true"> 
+        </div>
+        <div class='hljs' id='output'><span id="out"></span></div>
+        <button id='but' onclick="send()">Run Code</button>
+    </div>
+    <br>
+    <script>
+    id('code').addEventListener("input", ()=>{
+    heigh()
+        i++
+        id("number").innerHTML += `<br><span style="top:${22+i}px;position:relative;">${i}</span>`
+    
+      id('code').querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    })
+    id('output').addEventListener('keyup',async(event)=>{
+               setEnd(id('output'))
+                for(this.i=0;this.i<this.l;i++){inputs[this.i]=id('a'+i.toString()).value}
+                console.log(inputs)
+                if(event.keyCode===13){
+                    for(i=0;i<30;i++){Send(this.text,this.name,inputs)}
+                }
+        })
+    </script>
+</body>
+</html>

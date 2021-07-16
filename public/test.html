@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+          
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+      
+    <style>
+        div {
+            outline-color: red;
+            caret-color: red;
+            color: #ddd;
+            width: 550px;
+            text-align: justify;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+  
+<body>
+    <center>
+        <h1 style="color:green;padding:13px;">
+            GeeksforGeeeks
+        </h1>
+        <br>
+  
+        <div id="editable" contenteditable="true"
+                    spellcheck="false">
+            HTML stands for Hyper Text Markup Language.
+            It is used to design web pages using markup
+            language. HTML is the combination of Hypertext
+            and Markup language. Hypertext defines the
+            link between the web pages. Markup language
+            is used to define the text document within
+            tag which defines the structure of web pages. 
+            HTML is a markup language which is used by
+            the browser to manipulate text, images and
+            other content to display it in required
+            format.
+        </div>
+        <br/>
+          
+        <button>Position Cursor</button>
+    </center>
+      
+    <script>
+        function positionCursor() {
+              
+            var tag = document.getElementById("editable");
+              
+            // Creates range object
+            var setpos = document.createRange();
+              
+            // Creates object for selection
+            var set = window.getSelection();
+              
+            // Set start position of range
+            setpos.setStart(tag.childNodes[0], 12);
+              
+            // Collapse range within its boundary points
+            // Returns boolean
+            setpos.collapse(true);
+              
+            // Remove all ranges set
+            set.removeAllRanges();
+              
+            // Add range with respect to range object.
+            set.addRange(setpos);
+              
+            // Set cursor on focus
+            tag.focus();
+        }
+      
+        $('button').click(function() {
+            positionCursor();
+        });
+    </script>
+</body>
+  
+</html>

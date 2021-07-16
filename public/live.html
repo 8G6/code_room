@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/syntax.css">
+    <link id='style'rel="stylesheet" href="css/styles/atelier-forest-dark.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <script src="js/sub.js">console.log(request.query)</script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="js/lib.js">hljs.initHighlightingOnLoad();</script>
+    <script>
+    
+    async function get(){
+        let data=await fetch(window.location.origin+'/type',{mode: 'no-cors'});
+        let json=await data.json();
+        let out=json.out;
+        let a=out.replaceAll('\n','<br>');
+        console.log(a);
+        a='<pre><code class="python">'+a+'</code></pre>';
+        id('code').innerHTML=a
+    }
+    setInterval(async ()=>{await get()},500)
+    setInterval(()=>{
+        document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    },100)
+    </script>
+    <header>
+        <div id="heading">Innovation and Entrepreneurship Development Centre <br>College of Enginnering Karunagapally</div> 
+    </header> 
+    <div id='code' class='hljs' width='100%' contentEditable="true">
+     <pre><code class="python">for i in range</code></pre>   
+    </div>
+</body>
+</html>
